@@ -8,8 +8,8 @@ load_dotenv()
 logger = logging.getLogger(__name__)
 logger.setLevel(level=logging.DEBUG)
 
-file_handler = logging.FileHandler('log-file.txt')
-file_handler.setLevel('DEBUG')
+file_handler = logging.FileHandler("log-file.txt")
+file_handler.setLevel("DEBUG")
 
 logger.addHandler(file_handler)
 
@@ -27,8 +27,8 @@ async def on_message(message):
     if message.author == client.user:
         return
 
-    if message.content.startswith('$hello'):
-        await message.channel.send('Fuck you!')
+    if message.content.startswith("$hello"):
+        await message.channel.send("Fuck you!")
 
 
 token = os.getenv("TOKEN")
