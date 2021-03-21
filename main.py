@@ -30,7 +30,6 @@ class DotaClient(discord.Client):
         logger.debug(message)
         if message.author == self.user:
             return
-
         if message.content.startswith('$hello'):
             await message.channel.send('Fuck you!')
 
