@@ -31,3 +31,5 @@ typing-extensions==3.7.4.3
 urllib3==1.26.4
 virtualenv==20.4.2
 yarl==1.6.3
+
+pytest~=6.2.3
